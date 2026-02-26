@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Indian Forest Service Benevolent and Welfare</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+<style>
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', system-ui, sans-serif; }
+.heading-font { font-family: 'Playfair Display', sans-serif; }
+.nav-link.active { color: #059669; font-weight: 600; }
+</style>
+</head>
+
+<body class="bg-gradient-to-b from-emerald-900 via-emerald-800 to-emerald-950 text-white">
+
+<!-- NAVBAR -->
+<nav class="bg-emerald-900/95 backdrop-blur border-b sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    
+    <!-- Logo + Title -->
+    <a href="#top" class="flex items-center gap-3">
+      <div class="w-10 h-10 bg-emerald-700 rounded-xl flex items-center justify-center text-2xl">
+        <i class="fas fa-tree"></i>
+      </div>
+      <div>
+        <span class="heading-font text-xl font-bold text-emerald-200">
+          Indian Forest Service
+        </span>
+        <span class="block text-[10px] tracking-widest text-emerald-500">
+          BENEVOLENT & WELFARE
+        </span>
+      </div>
+    </a>
+
+    <!-- Navigation Links -->
+    <div class="hidden md:flex gap-8 text-sm">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#initiatives" class="nav-link">Initiatives</a>
+      <a href="#stories" class="nav-link">Officer Stories</a>
+      <a href="#governance" class="nav-link">Governance</a>
+      <a href="#testimonials" class="nav-link">Testimonials</a>
+      <a href="#location" class="nav-link">Contact Us</a>
+    </div>
+
+ <!-- Language Toggle -->
+<button onclick="toggleLanguage()" 
+class="text-xs border border-amber-400 text-amber-300 px-3 py-1 rounded-full hover:bg-amber-400 hover:text-emerald-950 transition">
+हिंदी / EN
+</button>
+<button onclick="openDonate()" class="text-xs bg-amber-400 text-emerald-950 px-4 py-2 rounded-full font-semibold">
+Donate
+</button>
+</div>
+</nav>
+<!-- HERO -->
+<section class="relative h-[90vh] flex items-center justify-center text-center">
+ <img src="https://images.unsplash.com/photo-1470115636492-6d2b56f9146d" 
+         class="absolute inset-0 w-full h-full object-cover" />
+<div class="absolute inset-0 bg-black/10"></div>
+<div class="relative max-w-4xl">
+<h1 class="heading-font text-6xl text-amber-300 mb-6">
+  <span class="lang en">Protecting Forests. Supporting Heroes.</span>
+  <span class="lang hi hidden">वनों की रक्षा। वीरों का सम्मान।</span>
+</h1>
+<p class="text-lg text-emerald-100">
+  <span class="lang en">
+    Dedicated to welfare, resilience, and honour of Indian Forest Service officers.
+  </span>
+  <span class="lang hi hidden">
+    भारतीय वन सेवा अधिकारियों के कल्याण और सम्मान हेतु समर्पित।
+  </span>
+</p>
+<div class="flex gap-4 justify-center">
+            <button class="bg-amber-400 hover:bg-amber-500 text-emerald-950 px-8 py-4 rounded-full font-semibold">
+                Support Welfare
+            </button>
+            <button class="border border-amber-300 text-amber-300 px-8 py-4 rounded-full">
+                Learn More
+            </button>
+</div>
+</section>
+<!-- ABOUT -->
+<section id="about" class="py-24 bg-emerald-900">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="heading-font text-4xl mb-6">About the Organisation</h2>
+<p class="text-emerald-200 leading-relaxed">
+The Indian Forest Service Benevolent and Welfare Trust is a professional, transparent and nationally committed welfare institution created to support officers, frontline staff and families working in some of the most challenging landscapes of the country. The organisation focuses on long-term resilience, emergency response, structured financial assistance, education, and institutional support.
+</p>
+</div>
+</section>
+
+<!-- INITIATIVES -->
+
+<section id="initiatives" class="py-24 bg-emerald-800">
+<h2 class="heading-font text-4xl text-center mb-12 text-amber-300">
+Initiatives
+</h2>
+<div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8">
+<div class="bg-emerald-900 p-8 rounded-xl">Martyr Support</div>
+<div class="bg-emerald-900 p-8 rounded-xl">Emergency Relief</div>
+<div class="bg-emerald-900 p-8 rounded-xl">Scholarships</div>
+<div class="bg-emerald-900 p-8 rounded-xl">Wildlife Missions</div>
+</div>
+</section>
+
+<!-- OFFICER STORIES WITH COLLAPSE -->
+<section id="stories" class="py-24 bg-emerald-900">
+<div class="max-w-6xl mx-auto px-6">
+
+<h2 class="heading-font text-4xl text-center mb-12 text-amber-300">
+Officer Stories
+</h2>
+
+<div class="space-y-8">
+
+<!-- Story 1 -->
+<div class="bg-emerald-800 rounded-2xl border border-amber-400 overflow-hidden">
+<button onclick="toggleStory(this)" class="w-full text-left p-6 flex justify-between items-center">
+<span class="text-lg font-semibold text-amber-300">Anti-Poaching Leadership in Tiger Reserves</span>
+<span class="text-xl text-amber-300">+</span>
+</button>
+<div class="hidden px-8 pb-8 text-emerald-200">
+<img src="https://images.unsplash.com/photo-1503437313881-503a91226402" class="w-full h-56 object-cover rounded-xl mb-6">
+<p class="leading-relaxed">
+Officers strengthened surveillance through technology-enabled patrols, community intelligence networks and coordinated enforcement operations. These efforts significantly reduced wildlife crime and enhanced biodiversity protection across critical tiger landscapes.
+</p>
+</div>
+</div>
+
+<!-- Story 2 -->
+<div class="bg-emerald-800 rounded-2xl border border-amber-400 overflow-hidden">
+<button onclick="toggleStory(this)" class="w-full text-left p-6 flex justify-between items-center">
+<span class="text-lg font-semibold text-amber-300">Community-Based Conservation Innovation</span>
+<span class="text-xl text-amber-300">+</span>
+</button>
+<div class="hidden px-8 pb-8 text-emerald-200">
+<img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" class="w-full h-56 object-cover rounded-xl mb-6">
+<p class="leading-relaxed">
+Participatory conservation models reduced human-wildlife conflict while improving local livelihoods. Collaborative forest governance strengthened ecological resilience and community trust.
+</p>
+</div>
+</div>
+
+<!-- Story 3 -->
+<div class="bg-emerald-800 rounded-2xl border border-amber-400 overflow-hidden">
+<button onclick="toggleStory(this)" class="w-full text-left p-6 flex justify-between items-center">
+<span class="text-lg font-semibold text-amber-300">Rapid Response During Forest Fires</span>
+<span class="text-xl text-amber-300">+</span>
+</button>
+<div class="hidden px-8 pb-8 text-emerald-200">
+<img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429" class="w-full h-56 object-cover rounded-xl mb-6">
+<p class="leading-relaxed">
+Integrated command systems and community fire brigades enabled rapid containment of large-scale forest fires, protecting biodiversity, wildlife habitats and nearby settlements.
+</p>
+</div>
+</div>
+
+<!-- Story 4 -->
+<div class="bg-emerald-800 rounded-2xl border border-amber-400 overflow-hidden">
+<button onclick="toggleStory(this)" class="w-full text-left p-6 flex justify-between items-center">
+<span class="text-lg font-semibold text-amber-300">Wildlife Rescue & Rehabilitation</span>
+<span class="text-xl text-amber-300">+</span>
+</button>
+<div class="hidden px-8 pb-8 text-emerald-200">
+<img src="https://images.unsplash.com/photo-1470770903676-69b98201ea1c" class="w-full h-56 object-cover rounded-xl mb-6">
+<p class="leading-relaxed">
+Dedicated teams successfully rescued and rehabilitated injured wildlife, ensuring safe reintroduction into natural habitats while enhancing community awareness and participation.
+</p>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- GOVERNANCE / DIRECTOR GENERAL -->
+<section id="governance" class="py-24 bg-emerald-950 text-white">
+  <div class="max-w-7xl mx-auto px-6">
+        <h2 class="heading-font text-4xl font-bold mb-6 text-center text-amber-300">Governance & Leadership</h2>
+        <p class="text-center text-emerald-200 max-w-3xl mx-auto mb-16">
+            The Indian Forest Service Benevolent and Welfare operates under a structured governance framework ensuring transparency, accountability, and institutional integrity. The leadership comprises senior forest officers and domain experts committed to welfare, conservation, and service excellence.
+        </p>
+
+        <!-- Vision & Mission -->
+        <div class="grid md:grid-cols-2 gap-12 mb-20">
+            <div class="bg-emerald-900 p-10 rounded-3xl border border-amber-400 shadow-lg">
+                <h3 class="text-2xl font-semibold text-amber-300 mb-4">Vision</h3>
+                <p class="text-emerald-200 leading-relaxed">
+                    To build a resilient welfare ecosystem that safeguards the dignity, security, and long-term wellbeing of Indian Forest Service officers and their families while strengthening national conservation efforts.
+                </p>
+            </div>
+
+            <div class="bg-emerald-900 p-10 rounded-3xl border border-amber-400 shadow-lg">
+                <h3 class="text-2xl font-semibold text-amber-300 mb-4">Mission</h3>
+                <p class="text-emerald-200 leading-relaxed">
+                    To provide structured financial assistance, emergency response mechanisms, educational support, and institutional backing to forest personnel, ensuring transparency and measurable impact in every initiative undertaken.
+                </p>
+            </div>
+        </div>
+
+    <!-- Director General Profile -->
+    <div class="bg-emerald-900 p-10 rounded-3xl shadow-lg flex flex-col md:flex-row items-center gap-10">
+
+      <!-- Photo -->
+      <div class="flex-shrink-0 text-center">
+        <img src="https://randomuser.me/api/portraits/men/45.jpg"
+             alt="Director General of Forests"
+             class="w-56 h-56 object-cover rounded-full border-4 border-amber-300 shadow-lg mx-auto">
+        <div class="mt-4 text-amber-300 font-semibold text-xl">
+          Shri Anil Kumar Sharma
+        </div>
+        <div class="text-sm text-emerald-300">Director General of Forests & Special Secretary</div>
+      </div>
+
+      <!-- Message -->
+      <div class="text-emerald-200 leading-relaxed text-justify max-w-3xl">
+        <p class="mb-4">
+          “The Indian Forest Service forms the backbone of India’s ecological security and wildlife protection.
+          Our officers serve in some of the most challenging environments — from remote high-altitude forests
+          to dense tropical reserves. Their welfare, safety, and dignity remain the cornerstone of this organisation.”
+        </p>
+        <p class="mb-4">
+          “Through structured governance, transparent policies, and unwavering institutional support, we aim
+          to uphold the highest standards of service, welfare, and conservation across the country. Our
+          collective commitment ensures that every officer and their family are supported with respect,
+          recognition, and care.”
+        </p>
+        <p>
+          “Together, we move forward to protect forests, strengthen communities, and safeguard biodiversity
+          for future generations.”
+        </p>
+      </div>
+     </div>
+</section>
+
+<!-- TESTIMONIALS -->
+
+<section id="testimonials" class="py-24 bg-emerald-950 text-white">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="heading-font text-4xl font-bold text-center text-amber-300 mb-8">
+      Testimonials
+    </h2>
+
+<section id="testimonials" class="py-24 bg-emerald-900">
+<div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
+
+<div class="bg-emerald-800 p-8 rounded-xl">
+<p class="italic">Timely welfare assistance and institutional care have strengthened morale among officers serving in remote and challenging areas.</p>
+<div class="mt-4 text-amber-300">Senior IFS Officer</div>
+</div>
+
+<div class="bg-emerald-800 p-8 rounded-xl">
+<p class="italic">The structured governance and transparency framework makes this organisation a model for professional welfare institutions.</p>
+<div class="mt-4 text-amber-300">Environmental Policy Expert</div>
+</div>
+
+<div class="bg-emerald-800 p-8 rounded-xl">
+<p class="italic">Support for families of fallen officers has provided long-term stability and dignity.</p>
+<div class="mt-4 text-amber-300">Martyr Family Beneficiary</div>
+</div>
+
+</div>
+</section>
+
+<!-- DONATION MODAL -->
+<div id="donateModal" class="hidden fixed inset-0 bg-black/80 flex items-center justify-center z-50">
+<div class="bg-white text-black max-w-lg w-full rounded-xl p-8">
+
+<h2 class="text-2xl font-bold mb-4">Support the Trust</h2>
+
+<p class="mb-4">Bank Transfer:</p>
+<p class="text-sm">Account Name: IFS Benevolent Trust</p>
+<p class="text-sm">Account No: XXXXXXXX</p>
+<p class="text-sm mb-4">IFSC: XXXXX</p>
+
+<p class="mb-2">UPI:</p>
+<p class="mb-4">ifs@upi</p>
+
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=ifs@upi" class="mx-auto mb-6">
+
+<button onclick="closeDonate()" class="bg-emerald-700 text-white px-6 py-2 rounded">Close</button>
+
+</div>
+</div>
+
+<script>
+function openDonate(){ document.getElementById('donateModal').classList.remove('hidden'); }
+function closeDonate(){ document.getElementById('donateModal').classList.add('hidden'); }
+function toggleStory(btn){
+    const content = btn.nextElementSibling;
+    const icon = btn.querySelector("span:last-child");
+
+    content.classList.toggle("hidden");
+
+    if(content.classList.contains("hidden")){
+        icon.textContent = "+";
+    } else {
+        icon.textContent = "−";
+    }
+}
+
+let currentLang = "en";
+
+function toggleLanguage() {
+  const enTexts = document.querySelectorAll(".lang.en");
+  const hiTexts = document.querySelectorAll(".lang.hi");
+
+  if (currentLang === "en") {
+    enTexts.forEach(el => el.classList.add("hidden"));
+    hiTexts.forEach(el => el.classList.remove("hidden"));
+    currentLang = "hi";
+  } else {
+    hiTexts.forEach(el => el.classList.add("hidden"));
+    enTexts.forEach(el => el.classList.remove("hidden"));
+    currentLang = "en";
+  }
+}
+
+</script>
+
+<!-- ADDRESS & LOCATION -->
+<section id="location" class="py-20 bg-emerald-950 border-t border-emerald-800">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+
+    <!-- Address -->
+    <div>
+      <h2 class="heading-font text-3xl text-amber-300 mb-6">
+        Reach us
+      </h2>
+
+      <p class="text-emerald-200 leading-relaxed mb-4">
+        Indian Forest Service Benevolent and Welfare Trust  
+        Ministry of Environment, Forest and Climate Change  
+        Government of India
+      </p>
+
+      <p class="text-emerald-300 mb-2">
+        📍 Address: Indira Paryavaran Bhawan,  
+        Jor Bagh Road, New Delhi – 110003
+      </p>
+
+      <p class="text-emerald-300 mb-2">
+        📞 Phone: +91-XXXXXXXXXX
+      </p>
+
+      <p class="text-emerald-300 mb-4">
+        ✉ Email: contact@ifswelfare.org
+      </p>
+
+      <a href="https://maps.google.com" target="_blank"
+         class="inline-block bg-amber-400 text-emerald-950 px-6 py-2 rounded-full font-semibold">
+         View on Google Maps
+      </a>
+    </div>
+
+    <!-- Google Map -->
+    <div class="rounded-xl overflow-hidden border-2 border-amber-400 shadow-lg">
+      <iframe
+        src="https://www.google.com/maps?q=Indira%20Paryavaran%20Bhawan%20New%20Delhi&output=embed"
+        width="100%" height="350"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+    </div>
+
+  </div>
+</section>
+
+<!-- SOCIAL MEDIA & FOOTER -->
+<footer class="bg-emerald-900 border-t border-emerald-800 py-12">
+
+  <div class="max-w-7xl mx-auto px-6 text-center">
+
+    <!-- Social Icons -->
+    <h3 class="heading-font text-2xl text-amber-300 mb-6">
+      Connect With Us
+    </h3>
+
+    <div class="flex justify-center gap-6 text-2xl">
+
+      <a href="#" target="_blank"
+         class="w-12 h-12 flex items-center justify-center rounded-full bg-emerald-800 hover:bg-amber-400 hover:text-emerald-950 transition">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+
+      <a href="#" target="_blank"
+         class="w-12 h-12 flex items-center justify-center rounded-full bg-emerald-800 hover:bg-amber-400 hover:text-emerald-950 transition">
+        <i class="fab fa-x-twitter"></i>
+      </a>
+
+      <a href="#" target="_blank"
+         class="w-12 h-12 flex items-center justify-center rounded-full bg-emerald-800 hover:bg-amber-400 hover:text-emerald-950 transition">
+        <i class="fab fa-instagram"></i>
+      </a>
+
+      <a href="#" target="_blank"
+         class="w-12 h-12 flex items-center justify-center rounded-full bg-emerald-800 hover:bg-amber-400 hover:text-emerald-950 transition">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+
+      <a href="#" target="_blank"
+         class="w-12 h-12 flex items-center justify-center rounded-full bg-emerald-800 hover:bg-amber-400 hover:text-emerald-950 transition">
+        <i class="fab fa-youtube"></i>
+      </a>
+
+    </div>
+
+    <!-- Legal / Govt Info -->
+    <div class="mt-8 text-sm text-emerald-300">
+      © 2026 Indian Forest Service Benevolent and Welfare Trust.  
+      All Rights Reserved.
+    </div>
+
+  </div>
+
+</footer>
+
+</body>
+</html>
